@@ -176,7 +176,7 @@ section {
 
 #hero {
   position: relative;
-  min-height: 90vh;
+  min-height: 70vh; /* altura del hero: subir/bajar este valor */
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
@@ -185,8 +185,9 @@ section {
   /* Para cambiar la imagen, desde assets/:
      cwebp -q 82 -alpha_q 90 NUEVA.png -o hero-bg-1920.webp
      cwebp -q 80 -alpha_q 90 -resize 1280 0 NUEVA.png -o hero-bg-1280.webp */
-  /* "top 30px": baja la imagen; aumentar para bajarla más */
-  background: #fff url('../assets/hero-bg-1920.webp') center top 30px / cover no-repeat;
+  /* Imagen ajustada a la altura del hero y alineada a la derecha: se ve completa,
+     y el espacio libre queda a la izquierda, detrás del nombre */
+  background: #fff url('../assets/hero-bg-1920.webp') right center / auto 100% no-repeat;
 }
 
 /* Velo blanco desde la izquierda — mantiene legible el texto sobre el render */
@@ -1149,6 +1150,7 @@ section {
   overflow: hidden;
 }
 .gallery-thumb canvas { width: 100%; height: 100%; display: block; }
+.gallery-thumb img { width: 100%; height: 100%; object-fit: contain; display: block; background: #fff; }
 .gallery-thumb-placeholder {
   color: var(--text-muted);
   font-size: 0.78rem;

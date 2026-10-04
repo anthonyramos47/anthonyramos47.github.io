@@ -245,7 +245,9 @@ async function loadGallery() {
 
     card.innerHTML = `
       <div class="gallery-thumb" id="thumb-${mesh.id}">
-        <div class="gallery-thumb-placeholder">${isPlaceholder ? 'Coming Soon' : 'Preview'}</div>
+        ${mesh.thumb
+          ? `<img src="${mesh.thumb}" alt="${mesh.title}" loading="lazy">`
+          : `<div class="gallery-thumb-placeholder">${isPlaceholder ? 'Coming Soon' : 'Preview'}</div>`}
       </div>
       <div class="gallery-info">
         <h3>${mesh.title}</h3>

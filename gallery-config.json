@@ -18,7 +18,8 @@
         "file": "models/qsmesh_2.web.glb",
         "title": "QS-mesh 2"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/sphere-meshes-moebius.webp"
   },
   {
     "id": "sphere-meshes-laguerre",
@@ -39,6 +40,7 @@
         "file": "models/old_lconju_arch_design.web.glb",
         "title": "Architectural design"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/sphere-meshes-laguerre.webp"
   }
 ]
