@@ -1,0 +1,44 @@
+[
+  {
+    "id": "sphere-meshes-moebius",
+    "title": "Sphere Meshes in Möbius Geometry",
+    "description": "Meshes whose faces are spherical — a structure bridging discrete differential geometry and architectural design.",
+    "year": 2024,
+    "tags": [
+      "Möbius geometry",
+      "spherical faces",
+      "architectural geometry"
+    ],
+    "models": [
+      {
+        "file": "models/qsmesh.web.glb",
+        "title": "QS-mesh"
+      },
+      {
+        "file": "models/qsmesh_2.web.glb",
+        "title": "QS-mesh 2"
+      }
+    ]
+  },
+  {
+    "id": "sphere-meshes-laguerre",
+    "title": "Sphere Meshes in Laguerre Geometry",
+    "description": "Sphere meshes with quad combinatorics in Laguerre geometry — from an L-mesh example to an architectural design.",
+    "year": 2026,
+    "tags": [
+      "Laguerre geometry",
+      "quad mesh",
+      "architectural geometry"
+    ],
+    "models": [
+      {
+        "file": "models/lmesh_example.web.glb",
+        "title": "L-mesh example"
+      },
+      {
+        "file": "models/old_lconju_arch_design.web.glb",
+        "title": "Architectural design"
+      }
+    ]
+  }
+]

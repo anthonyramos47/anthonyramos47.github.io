@@ -1,0 +1,21 @@
+# Archivos que NO se publican en GitHub Pages (se quedan solo en tu computadora)
+
+# macOS
+.DS_Store
+
+# Modelos originales de Blender — la web usa las versiones comprimidas *.web.glb
+models/*.glb
+!models/*.web.glb
+
+# Imágenes de fondo sin usar (la web usa assets/hero-bg-*.webp)
+/background_*.png
+assets/background_*.png
+assets/research_render.png
+
+# CV — la página ya no lo enlaza; si estuviera subido, cualquiera podría descargarlo
+resume.pdf
+
+# Notas internas (no hace falta publicarlas)
+DEPLOY.md
+HOWTO-UPDATE.md
+models/README.md
