@@ -1532,6 +1532,16 @@ footer p {
 @media (max-width: 520px) {
   section { padding: 52px 0; }
   .research-grid { grid-template-columns: 1fr; }
-  .home-pub-row { grid-template-columns: 1fr 18px; }
-  .hpr-left { flex-direction: row; align-items: center; gap: 8px; }
+  .home-pub-row {
+    grid-template-columns: 1fr 18px;
+    grid-template-areas:
+      "left arrow"
+      "body body";
+    align-items: start;
+    row-gap: 6px;
+    padding: 12px 10px 12px 12px;
+  }
+  .hpr-left  { grid-area: left; flex-direction: row; align-items: center; gap: 8px; }
+  .hpr-body  { grid-area: body; min-width: 0; }
+  .hpr-arrow { grid-area: arrow; }
 }
